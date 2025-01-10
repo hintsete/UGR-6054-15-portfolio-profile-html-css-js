@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Education Background</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/education.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
     
 </head>
 <body>
@@ -21,71 +24,83 @@
                 </ul>
             </div>
         </nav>
-        <nav id="hamburger-nav">
+        <nav id="hamburger-nav" >
             <div class="logo">Hintsete Hilawe</div>
             <div class="hamburger-menu">
-                <div class="hamburger-icon">
+                <div class="hamburger-icon" onclick="toggleMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
                 <div class="menu-links">
                     <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="education.html">Education</a></li>
-                        <li><a href="adventure.html">Adventure</a></li>
-                        <li><a href="project.html">Project</a></li>
+                        <li><a href="home.html" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                    <li><a href="education.html" onclick="toggleMenu()">Education</a></li>
+                    <li><a href="adventure.html" onclick="toggleMenu()">Adventure</a></li>
+                    <li><a href="project.html" onclick="toggleMenu()">Project</a></li>
 
                     </ul>
-                    
+                   
+
                 </div>
             </div>
         </nav>
     </header>
     <main id="education">
-        <p class="section_text_p1">A snapshot of</p>
+        <p class="section_text_p1">A snapshot of my</p>
         <h1 class="title">Academic Path</h1>
         <div class="education-section">
-           
-            <p class="section_text_p2">Welcome to my education section, where I share my academic journey, key courses, certifications, and more that have shaped my professional expertise.</p>
             <table class="education-table">
                 <thead>
                     <tr>
-                        <th>Image</th>
-                        <th>Institution</th>
-                        <th>Degree/Certification</th>
-                        <th>Year</th>
-                        <th>Description</th>
+                        <th colspan="3">My Academic Path</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td rowspan="4">
-                            <img src="./images/education.jpg" alt="Educational Journey" class="education-image">
+                        <td rowspan="5" class="edu-img"><img src="./images/education.jpg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td class="desription">  <strong>Addis Ababa Institute of Technology</strong></td>
+                        <td class="details">
+                            <ul>
+                                <li>Certification: Bachelor of Software Engineering</li>
+                                <li>Year: 2023-2027</li>
+                                <li>Description: Studying software engineering concepts, programming, and system design.</li>
+                            </ul>
                         </td>
-                        <td>Addis Ababa Institute of Technology</td>
-                        <td>Bachelor of Software Engineering</td>
-                        <td>2023-2027</td>
-                        <td>Studying software engineering concepts, programming, and system design.</td>
                     </tr>
                     <tr>
-                        <td>Nazareth School</td>
-                        <td>High School Diploma</td>
-                        <td>2018-2022</td>
-                        <td>Focused on science and technology courses, including mathematics, physics, chemistry and ICT.</td>
+                        <td class="desription"><strong>Nazareth School</strong></td>
+                        <td class="details">
+                            <ul>
+                                <li>Certification: High School Diploma</li>
+                                <li>Year: 2018-2022</li>
+                                <li>Description: Focused on science and technology courses, including mathematics, physics, chemistry, and ICT.</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
-                        <td>BlueHealth Ethiopia</td>
-                        <td>Professional Certification</td>
-                        <td>2023</td>
-                        <td>Learned essential first aid techniques and safety protocols.</td>
+                        <td class="desription"><strong>BlueHealth Ethiopia</strong></td>
+                        <td class="details">
+                            <ul>
+                                <li>Certification: Professional Certification</li>
+                                <li>Year: 2023</li>
+                                <li>Description: Learned essential first aid techniques and safety protocols.</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Udacity</td>
-                        <td>Programming Fundamentals</td>
-                        <td>2024</td>
-                        <td>Completed courses in basics of web development.</td>
+                        <td class="desription"><strong>Udacity</strong></td>
+                        <td class="details">
+                            <ul>
+                                <li>Certification: Programming Fundamentals</li>
+                                <li>Year: 2024</li>
+                                <li>Description: Completed courses in basics of web development.</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -95,21 +110,22 @@
     </main>
     
     <footer>
-        <p class="section_text_p1">Get In Touch</p>
-        <h2 class="title">Contact Me</h2>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./images/email.png" alt="email icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:hintseteabera@gmail.com">hintseteabera@gmail.com</a></p>
+        <section class="contact-section">
+            <p>Get in Touch</p>
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-item email">
+                    <img src="./images/email.png" alt="Email Icon">
+                    <p><a href="mailto:hintseteabera@gmail.com">hintseteabera@gmail.com</a></p>
+                </div>
+                <div class="contact-item linkedin">
+                    <img src="./images/linkedin.png" alt="LinkedIn Icon">
+                    <p><a href="https://www.linkedin.com/in/hintsete-h-1a53882b9/">LinkedIn</a></p>
+                </div>
             </div>
-        </div>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./images/linkedin.png" alt="linkedin icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/hintsete-h-1a53882b9/">LinkedIn</a></p>
-            </div>
-        </div>
-        <p>Copyright &#169; 2024 Hintsete Hilawe. All Rights Reserved</p>
-      </footer>
+            <p>&copy; 2024 Hintsete Hilawe. All Rights Reserved.</p>
+        </section>
+    </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>

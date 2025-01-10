@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
 </head>
 <body>
     <header>
@@ -20,23 +23,24 @@
                 </ul>
             </div>
         </nav>
-        <nav id="hamburger-nav">
+        <nav id="hamburger-nav" >
             <div class="logo">Hintsete Hilawe</div>
             <div class="hamburger-menu">
-                <div class="hamburger-icon">
+                <div class="hamburger-icon" onclick="toggleMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
                 <div class="menu-links">
                     <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="education.html">Education</a></li>
-                        <li><a href="adventure.html">Adventure</a></li>
-                        <li><a href="project.html">Project</a></li>
+                        <li><a href="home.html" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                    <li><a href="education.html" onclick="toggleMenu()">Education</a></li>
+                    <li><a href="adventure.html" onclick="toggleMenu()">Adventure</a></li>
+                    <li><a href="project.html" onclick="toggleMenu()">Project</a></li>
+
                     </ul>
-                    
+                   
 
                 </div>
             </div>
@@ -46,72 +50,70 @@
         <p class="section_text_p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <section id="projects">
-            
-            <div class="project-details-container">
-                <div class="project-containers">
-                    <div class="details-container color-container" >
-                        <div class="project-img-container">
-                            <img src="./images/project-1.png" alt="" class="project-img">
-                        </div>
-                        <h2 class="project-sub-title project-title">Project One</h2>
-                        <p class="project-description">A tribute site dedicated to the esteemed Martyr Laurete Afewerk Tekle,
-                         featuring interactive navigation menu that changes style when scrolling or hovering over menu items.</p>
-                        <div class="btn-container">
-        
-                            <a class="btn btn-color-1 project-btn" href="https://github.com/hintsete/PRODIGY_WD_01" target="_blank" >
-                                Github
-                            </a>
-                        </div>
-                    </div>
-                    <div class="details-container color-container">
-                        <div class="project-img-container">
-                            <img src="./images/project-2.png" alt="" class="project-img">
-                        </div>
-                        <h2 class="project-sub-title project-title">Project Two</h2>
-                        <p class="project-description">A weather application that uses an API to display real-time weather data for any city. Built with vanilla Javascript and integrated with OpenWeather API.</p>
-                        <div class="btn-container">
-                            
-                            <a class="btn btn-color-1 project-btn" href="https://github.com/hintsete/PRODIGY_WD_05" target="_blank">
-                                Github
-                            </a>
-                            
-                        </div>
-                    </div>
-                    <div class="details-container color-container">
-                        <div class="project-img-container">
-                            <img src="./images/project-3.png" alt="" class="project-img">
-                        </div>
-                        <h2 class="project-sub-title project-title">Project Three</h2>
-                        <p class="project-descrption">A stopwatch application utilizing asynchronous programming techniques</p>
-                        <div class="btn-container">
-                            <a class="btn btn-color-1 project-btn" href="https://github.com/hintsete/PRODIGY_WD_02" target="_blank">
-                                Github
-                            </a>
-                            
-                        </div>
+            <div class="project-card">
+                <div class="project-img-container">
+                    <img src="./images/project-1.png" alt="Project One Image" class="project-img">
+                    <div class="btn-container">
+                        <a class="btn" href="https://github.com/hintsete/PRODIGY_WD_01" target="_blank">GitHub</a>
                     </div>
                 </div>
-            </div> 
+                <div class="project-content">
+                    <h2 class="project-title">Project One</h2>
+                    <p class="project-description">A tribute site dedicated to the esteemed Martyr Laurete Afewerk Tekle, featuring interactive navigation menu that changes style when scrolling or hovering over menu items.</p>
+                    
+                </div>
+            </div>
+        
+            <div class="project-card">
+                <div class="project-img-container">
+                    <img src="./images/project-2.png" alt="Project Two Image" class="project-img">
+                    <div class="btn-container">
+                        <a class="btn" href="https://github.com/hintsete/PRODIGY_WD_05" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h2 class="project-title">Project Two</h2>
+                    <p class="project-description">A weather application that uses an API to display real-time weather data for any city. Built with vanilla JavaScript and integrated with OpenWeather API.</p>
+                   
+                </div>
+            </div>
+        
+            <div class="project-card">
+                <div class="project-img-container">
+                    <img src="./images/project-3.png" alt="Project Three Image" class="project-img">
+                    <div class="btn-container">
+                        <a class="btn" href="https://github.com/hintsete/PRODIGY_WD_02" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h2 class="project-title">Project Three</h2>
+                    <p class="project-description">A stopwatch application utilizing asynchronous programming techniques.</p>
+                   
+                </div>
+            </div>
         </section>
+        
+        
     </main>
     
     <footer>
-        <p class="section_text_p1">Get In Touch</p>
-        <h2 class="title">Contact Me</h2>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./images/email.png" alt="email icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:hintseteabera@gmail.com">hintseteabera@gmail.com</a></p>
+        <section class="contact-section">
+            <p>Get in Touch</p>
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-item email">
+                    <img src="./images/email.png" alt="Email Icon">
+                    <p><a href="mailto:hintseteabera@gmail.com">hintseteabera@gmail.com</a></p>
+                </div>
+                <div class="contact-item linkedin">
+                    <img src="./images/linkedin.png" alt="LinkedIn Icon">
+                    <p><a href="https://www.linkedin.com/in/hintsete-h-1a53882b9/">LinkedIn</a></p>
+                </div>
             </div>
-        </div>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./images/linkedin.png" alt="linkedin icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/hintsete-h-1a53882b9/">LinkedIn</a></p>
-            </div>
-        </div>
-        <p>Copyright &#169; 2024 Hintsete Hilawe. All Rights Reserved</p>
-      </footer>
-
+            <p>&copy; 2024 Hintsete Hilawe. All Rights Reserved.</p>
+        </section>
+    </footer>
+    
+<script src="./js/main.js"></script>
 </body>
 </html>

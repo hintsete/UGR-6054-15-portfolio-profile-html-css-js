@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hintsete Hilawe - A Journey Through Learning, Hobbies & Projects</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
     
 </head>
 <body>
@@ -17,25 +20,25 @@
                     <li><a href="education.html">Education</a></li>
                     <li><a href="adventure.html">Adventure</a></li>
                     <li><a href="project.html">Project</a></li>
-
+                   
                 </ul>
             </div>
         </nav>
-        <nav id="hamburger-nav">
+        <nav id="hamburger-nav" >
             <div class="logo">Hintsete Hilawe</div>
             <div class="hamburger-menu">
-                <div class="hamburger-icon">
+                <div class="hamburger-icon" onclick="toggleMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
                 <div class="menu-links">
                     <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="education.html">Education</a></li>
-                        <li><a href="adventure.html">Adventure</a></li>
-                        <li><a href="project.html">Project</a></li>
+                        <li><a href="home.html" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                    <li><a href="education.html" onclick="toggleMenu()">Education</a></li>
+                    <li><a href="adventure.html" onclick="toggleMenu()">Adventure</a></li>
+                    <li><a href="project.html" onclick="toggleMenu()">Project</a></li>
 
                     </ul>
                    
@@ -45,69 +48,66 @@
         </nav>
     </header>
     <main id="home">
+        <!-- Welcome Section -->
         <section class="welcome">
-            <div class="picture-container">
-                <img src="./images/main-profile-pic.png" alt="Profile Picture">
-                <div class="section_text">
-                    <p class="section_text_p1">
-                        Hello, I am
-                    </p>
-                    <h1 class="title">Hintsete Hilawe</h1>
-                    <blockquote>
-                        <p class="section_text_p2">"Here, you'll find my journey—exploring passions, cv, projects, and moments that inspire me."</p>
-                      </blockquote>
-                      
-                    <div class="download-container">
-                        <a class="download download-color-1" href="./files/My_resume.pdf" download>Download CV</a>
-
-    
-                    </div>
-                    <div id="socials-conatiner">
-                        <a href="https://www.linkedin.com/in/hintsete-h-1a53882b9" >
-                            <img src="./images/linkedin.png" alt="My LinkedIn Profile">
+            <div class="profile-container">
+                <img src="./images/main-profile-pic.png" alt="Profile Picture" class="profile-pic">
+                <div class="welcome-text">
+                    <p>Hello, I am</p>
+                    <h1>Hintsete Hilawe</h1>
+                    <p>"Here, you'll find my journey—exploring passions, CV, projects, and moments that inspire me."</p>
+                    <a href="./files/My_resume.pdf" download class="button">Download CV</a>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/hintsete-h-1a53882b9">
+                            <img src="./images/linkedin.png" alt="LinkedIn Profile">
                         </a>
-                        
-                        
-                        <a href="https://github.com/hintsete" >
-                            <img src="./images/github.png" alt="My Github Profile">
+                        <a href="https://github.com/hintsete">
+                            <img src="./images/github.png" alt="GitHub Profile">
                         </a>
                     </div>
                 </div>
             </div>
-    
         </section>
     
-        <section class="highlight-section">
+        <!-- Recent Adventure Section -->
+        <section class="adventure-section">
             <h2>Recent Adventure</h2>
-            <div class="highlight">
-              <img src="./images/adventure-img.jpg" alt="Adventure Image">
-              <div class="highlight-text">
-                <h3>Exploring an Antique Store</h3>
-                <p>I recently visited an antique store filled with vintage books, vinyl records, and unique crafts. It was an inspiring experience that I'd love to share!</p>
-                <a href="adventure.html" class="highlight-button">Learn More</a>
-              </div>
+            <div class="adventure-card">
+                <img src="./images/adventure-img.jpg" alt="Exploring an Antique Store" class="adventure-img">
+                <div class="adventure-details">
+                    <div class="adventure-text">
+                        <h3>Exploring an Antique Store</h3>
+                        <p>
+                        I recently visited an antique store filled with vintage books, vinyl records, and unique crafts. It was an inspiring experience that I'd love to share!
+                        </p>
+
+                    </div>
+                    <button class="adventure-button" onclick="navigateToAdventure()">Learn More</button>
+                </div>
             </div>
-          </section>
-    </main>
-   
-      <footer>
-        <p class="section_text_p1">Get In Touch</p>
-        <h2 class="title">Contact Me</h2>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./images/email.png" alt="email icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:hintseteabera@gmail.com">hintseteabera@gmail.com</a></p>
-            </div>
-        </div>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./images/linkedin.png" alt="linkedin icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/hintsete-h-1a53882b9/">LinkedIn</a></p>
-            </div>
-        </div>
-        <p>Copyright &#169; 2024 Hintsete Hilawe. All Rights Reserved</p>
+        </section>
         
-      </footer>
+    </main>
     
+    <!-- Footer Section -->
+    <footer>
+        <section class="contact-section">
+            <p>Get in Touch</p>
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-item email">
+                    <img src="./images/email.png" alt="Email Icon">
+                    <p><a href="mailto:hintseteabera@gmail.com">hintseteabera@gmail.com</a></p>
+                </div>
+                <div class="contact-item linkedin">
+                    <img src="./images/linkedin.png" alt="LinkedIn Icon">
+                    <p><a href="https://www.linkedin.com/in/hintsete-h-1a53882b9/">LinkedIn</a></p>
+                </div>
+            </div>
+            <p>&copy; 2024 Hintsete Hilawe. All Rights Reserved.</p>
+        </section>
+    </footer>
+    
+  <script src="./js/main.js"></script>  
 </body>
 </html>

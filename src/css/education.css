@@ -1,0 +1,76 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f6f9f6;
+}
+
+main, footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section Text Styling */
+.section_text_p1 {
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    margin: 0;
+}
+
+/* Title Styling */
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 10px 0 50px;
+    color: black;
+}
+ /* Education Section Styles */
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ADD1AF;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.education-table th {
+    background-color: #ADD1AF;
+    color: black;
+    font-size: 1.5rem;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid black; /* Border for table header */
+}
+
+.education-table td {
+    padding: 15px;
+    vertical-align: top;
+    border: 1px solid black; /* Border between table cells */
+}
+
+.education-table img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.education-table ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.education-table li {
+    margin-bottom: 8px;
+}
+
+

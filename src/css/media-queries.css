@@ -1,0 +1,843 @@
+/* home page */
+
+/* mobile portrait */
+
+@media only screen and (max-width: 390px) {
+    /* Page-specific styles */
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+   
+    .welcome{
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .profile-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .adventure-card{
+        display: block;
+
+    }
+    .adventure-details{
+        display: flex;
+        flex-direction: column;
+    }
+    .social-links img{
+        width: 20px;
+        height: 20px;
+    }
+    
+     .contact-container {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin: 20px auto;
+        max-width: 100%;
+        align-items: center;
+        flex-direction: column;
+        background-color: #EBF4EC ;
+        padding: 10px 15px;
+        border: none;
+        
+        
+    }
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #226b22;
+        padding: 10px 15px;
+        border-radius: 3px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        width: 90%;
+        font-size: 10px;
+        
+    }
+    .logo{
+        flex-wrap: wrap;
+        margin-right: 120px;
+    }
+
+}
+
+/* Mobile (Landscape) */
+@media only screen and (min-width:391px)and  ( max-width: 768px) {
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    .welcome{
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .profile-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .profile-pic{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .adventure-card{
+        display: flex;
+        align-items: center;
+    }
+    .adventure-details{
+        display: flex;
+        max-width: 300px;
+        flex-direction: row;
+    }
+    /* footer{
+        width: 25%;
+        margin: 10px auto;
+    } */
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 65px;
+        flex-wrap: nowrap;
+        
+        max-width: 60%;
+        align-items: center;
+        border: 3px solid #226b22;
+        background-color: white;
+        border-radius: 15px;
+        
+        padding: 10px 5px;
+        
+        
+    }
+    
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        width: 15%;
+        font-size: 10px;
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .email, .linkedin{
+        flex: 1;
+    }    
+    .contact-container img{
+        width: 25%;
+        height: auto;
+    }
+    .linkedin p{
+        margin-right: 5px;
+    }
+   
+    
+    
+}
+
+/* Tablet (Portrait) */
+@media only screen and (max-width: 1024px) {
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 65px;
+        flex-wrap: nowrap;
+        
+        max-width: 60%;
+        align-items: center;
+        border: 3px solid #226b22;
+        background-color: white;
+        border-radius: 15px;
+        
+        padding: 10px 5px;
+        
+        
+    }
+    
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        width: 15%;
+        font-size: 10px;
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .email, .linkedin{
+        flex: 1;
+    }    
+    .contact-container img{
+        width: 45%;
+        height: auto;
+    }
+    .linkedin p{
+        margin-right: 5px;
+    }
+  
+ 
+}
+/* Tablet (Landscape) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .adventure-card {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .adventure-card img {
+        width: 40%;
+        max-width: 150px;
+        border-radius: 7px;
+        
+    }
+    
+    .adventure-details {
+        max-width: 550px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .adventure-details h3 {
+        font-size: 1em;
+        margin-bottom: 10px;
+        color: black;
+    }
+    
+    .adventure-details p {
+        font-size: 0.6em;
+        margin-bottom: 20px;
+        color: #555;
+    }
+    .adventure-text{
+        flex: 1;
+    }
+    
+    .adventure-details .adventure-button {
+        background-color: #2c5f2d;
+        color: #fff;
+        padding: 5px 20px;
+        border-radius: 5px;
+        font-size: 1em;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        width: fit-content;
+        height: 4vh;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1201px) {
+    
+}
+
+/* About Page */
+/* Mobile Portrait */
+@media only screen and (max-width: 390px) {
+    /* Page-specific styles */
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    main {
+        padding: 1rem;
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .sketching-section,
+    .jazz-section {
+        flex-direction: column; /* Stack items vertically */
+        padding: 20px;
+        gap: 1rem;
+    }
+
+    .gallery img {
+        max-width: 100%; /* Make images responsive */
+        height: auto;
+    }
+
+    .sample-audio {
+        flex-direction: column; /* Stack audio and artist image vertically */
+    }
+
+    .audio-player,
+    .jazz-artist {
+        max-width: 100%; /* Take full width of the container */
+    }
+   
+ 
+
+}
+
+/* Mobile (Landscape) */
+@media only screen and (min-width: 391px) and  (max-width: 768px) {
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    main {
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    .sketching-section {
+        display: flex;
+        flex-direction: column; /* Allow items to wrap */
+    }
+
+    .gallery img {
+        max-width: 55%; /* Adjust image size */
+        height: auto;
+    }
+
+    .sample-audio {
+        gap: 1rem;
+    }
+
+
+}
+
+/* Tablet (Portrait) */
+@media only screen and (max-width: 1024px) {
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    main {
+        padding: 2rem;
+        width: 90%;
+    }
+
+    .sketching-section {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .gallery img {
+        max-width: 68%;
+        height: auto;
+    }
+
+    .audio-player,
+    .jazz-artist {
+        max-width: 48%; /* Take 48% width for alignment */
+    }
+  
+ 
+}
+/* Tablet (Landscape) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    main {
+        padding: 2rem;
+        width: 80%;
+    }
+
+    .sketching-section {
+        gap: 2rem; /* Adjust gap for larger screens */
+    }
+
+    .gallery img {
+        max-width: 30%;
+        height: auto;
+    }
+
+    .audio-player,
+    .jazz-artist {
+        max-width: 45%;
+    }
+   
+}
+
+/* Desktop */
+@media only screen and (min-width: 1201px) {
+    main {
+        width: 1200px;
+        margin: 40px auto;
+    }
+
+    .sketching-section {
+        flex-direction: row; /* Ensure horizontal alignment */
+        gap: 1.5rem;
+    }
+
+    .gallery img {
+        max-width: 250px;
+        height: 46vh;
+    }
+
+    .sample-audio {
+        flex-direction: row; /* Align horizontally */
+        gap: 2rem;
+    }
+
+    .audio-player,
+    .jazz-artist {
+        flex: 1;
+    }
+    
+}
+
+
+
+/* Education Page */
+@media only screen and (max-width: 390px) {
+    
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+    .education-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .education-table td {
+        display: block;
+        width: 100%;
+    }
+    .edu-img img {
+        width: 100%; 
+        height: auto;
+    }
+    .description,
+    .details {
+        display: block; 
+        padding-left: 10px;
+        text-align: left;
+    }
+    
+}
+
+
+/* Mobile (Landscape) */
+@media only screen and (max-width: 768px) {
+    /* Hide the desktop navigation */
+    #desktop-nav {
+        display: none;
+    }
+
+    /* Show the hamburger navigation */
+    #hamburger-nav {
+        display: flex;
+    }
+
+    
+  
+ 
+}
+/* Tablet (Portrait) */
+@media only screen and (max-width: 1024px) {
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    /* General table styling */
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ADD1AF; /* Updated background color */
+    border: 1px solid black; /* Consistent border for the table */
+}
+
+.education-table th {
+    text-align: center;
+    
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #c4c4c4;
+}
+
+.education-table td {
+    padding: 10px;
+    border: 1px solid #c4c4c4;
+    vertical-align: top; /* Ensure proper alignment */
+}
+
+/* Flexbox layout for table rows */
+tbody > tr {
+    display: flex;
+    flex-wrap: nowrap; /* Keep content in a single row */
+    align-items: center; /* Center content vertically */
+    border-bottom: 1px solid #c4c4c4;
+}
+
+/* Styling for the image */
+.edu-img {
+    flex: 0 0 50%; /* Use 50% of the row for the image */
+    text-align: center;
+    padding: 10px;
+}
+
+.edu-img img {
+    max-width: 100%; /* Ensure the image fits its container */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: slight shadow for a polished look */
+}
+
+/* Styling for description and details */
+.description-details {
+    flex: 0 0 50%; /* Use 50% of the row for text */
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: flex-start; /* Align content to the top */
+}
+
+.description {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    
+}
+
+.details ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /* Remove bullet points */
+}
+
+.details li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+    color: #2E4A3A; /* Match text color */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    tbody > tr {
+        flex-direction: column; /* Stack content vertically for smaller screens */
+    }
+
+    .edu-img, .description-details {
+        flex: 0 0 100%; /* Make each section full-width */
+    }
+}
+
+  
+ 
+}
+
+/* Tablet (Landscape) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    /* General table styling */
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ADD1AF; /* Optional: Background color similar to the example */
+}
+
+.education-table th {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.education-table td {
+    vertical-align: top;
+    padding: 10px;
+    border: 1px solid #c4c4c4; /* Ensure consistent borders for cells */
+}
+
+/* Styling for table rows to achieve proper alignment */
+tbody > tr {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    align-items: center; /* Ensure vertical alignment of content */
+    border-bottom: 1px solid #c4c4c4;
+}
+
+/* Image styling */
+.edu-img {
+    flex: 0 0 40%; /* Adjust image width (40% of row) */
+    text-align: center;
+    padding: 10px;
+}
+
+.edu-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: Adds slight shadow */
+}
+
+/* Description and details styling */
+.description-details {
+    flex: 0 0 60
+
+
+} 
+}   
+  
+
+/* Desktop */
+@media only screen and (min-width: 1201px) {
+    
+}
+/* Adventure Page */
+@media screen and (max-width: 390px) {
+    body {
+        
+        font-family: Arial, sans-serif; /* Clean font */
+    }
+
+    #adventure {
+        padding: 15px; /* Reduced padding for mobile */
+        /* Background color matching Figma style */
+        width: 100%; /* Full width for main section */
+        box-sizing: border-box; /* Include padding in width */
+        border-radius: 10px; /* Rounded corners */
+        margin: 0 auto; /* Centering */
+    }
+
+    .title {
+        font-size: 1.8rem; /* Adjust title size */
+        text-align: center; /* Center the title */
+    }
+
+    .section_text_p1 {
+        font-size: 1.2rem; /* Adjust subtitle size */
+        text-align: center; /* Center the subtitle */
+        margin-bottom: 20px; /* Space below subtitle */
+    }
+
+    .adventure-section {
+        margin: 0; /* Remove margin */
+    }
+
+    .section {
+        margin-bottom: 20px; /* Space between articles */
+        border: 1px solid #ccc; /* Light border for separation */
+        border-radius: 5px; /* Rounded corners */
+        padding: 10px; /* Inner padding */
+        background-color: #e8f5e9; 
+        
+
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust section title size */
+    }
+
+    .description {
+        font-size: 0.9rem; /* Adjust description size */
+        line-height: 1.4; /* Increase line height for readability */
+    }
+
+    .video-container {
+        text-align: center; /* Center video */
+    }
+
+    video {
+        width: 100%; /* Make video responsive */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 5px; /* Rounded corners */
+        margin-top: 10px; /* Space above video */
+    }
+
+    .video-caption {
+        font-size: 0.8rem; /* Smaller caption size */
+        text-align: center; /* Center align caption */
+        margin-top: 5px; /* Space above caption */
+    }
+
+    .gallery {
+        display: flex; /* Use flexbox for gallery */
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center align items */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figure {
+        margin: 5px; /* Space around figures */
+        flex: 1; /* Allow flexibility */
+        max-width: 180px; /* Limit maximum width */
+    }
+
+    img {
+        width: 100%; /* Responsive images */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 5px; /* Rounded corners */
+    }
+
+    figcaption {
+        font-size: 0.8rem; /* Smaller caption size */
+        text-align: center; /* Center align caption */
+    }
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin: 20px auto;
+        max-width: 100%;
+        align-items: center;
+        flex-direction: column;
+        background-color: #EBF4EC ;
+        padding: 10px 15px;
+        border: none;
+        
+        
+    }
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #226b22;
+        padding: 10px 15px;
+        border-radius: 3px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        
+    }
+}
+
+/* Mobile (Landscape) */
+@media only screen and (max-width: 768px) {
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    
+    .gallery figure {
+        width: calc(45% - 20px); /* Two items per row */
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+    .video-container video {
+        width: 90%; /* Adjust for landscape view */
+    }
+    
+
+}
+
+/* Tablet (Portrait) */
+@media only screen and (max-width: 1024px) {
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+   
+    
+  
+ 
+}
+/* Tablet (Landscape) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    
+}    
+  
+
+/* Desktop */
+@media only screen and (min-width: 1201px) {
+    
+}
+/* Project Page */
+@media only screen and (max-width: 390px) {
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    /* #projects{
+        display: block;
+    }
+    .project-card{
+        display: block;
+    } */
+   
+    
+  
+ 
+}
+@media only screen and (max-width: 768px) {
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    .project-card{
+        display: flex;
+        flex-direction: column;
+    }
+    .project-content{
+        display: flex;
+        
+    }
+    
+    
+  
+ 
+}
+@media only screen and (max-width: 1024px) {
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+   
+    
+  
+ 
+}
+/* Tablet (Landscape) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    
+}    
+  
+
+/* Desktop */
+@media only screen and (min-width: 1201px) {
+    
+}
+
+
+
+

@@ -1,0 +1,115 @@
+/* General Section Styling */
+main {
+    padding: 2rem;
+    
+    color: #555555;
+    width: 1200px;
+    margin: 40px auto;
+}
+
+
+.about.section{
+    background-color: #EBF4EC;
+}
+/* Headers */
+.hobby-header {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: black;
+}
+.hobby-header.title {
+    font-size: 2.5rem;
+    color: black;
+}
+
+/* Sketching Section */
+.sketching-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 30px;
+    border-radius: 15px;background-color: #EBF4EC;
+    text-align: left;
+    
+}
+.sketch-description {
+    flex: 1;
+}
+.sketch-title {
+    font-size: 2rem;
+    color: #333333;
+}
+.hobby-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+.gallery {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.gallery img {
+    width: 100%;
+    max-width: 250px;
+    height: 46vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Jazz Section */
+.jazz-section {
+    text-align: left; /* Center-aligns the text */
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #EBF4EC;
+    margin-top: 60px;
+}
+.jazz-title {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+.jazz-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem; /* Adds space between text and audio/image row */
+}
+.sample-audio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.audio-player, .jazz-artist {
+    flex: 1; /* Ensures equal width for both elements */
+    max-width: 400px; /* Sets a maximum width to ensure consistent sizing */
+    text-align: center;
+}
+.audio-player {
+    border: 2px solid #5AA15D; /* Adds a green border around the audio player */
+    padding: 1rem; /* Adds spacing inside the border */
+    border-radius: 8px; /* Rounds the corners of the border */
+    background-color: #ffffff; /* Background for the audio player */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.audio-player audio {
+    width: 100%; /* Makes the audio player fill its container */
+}
+.jazz-artist img {
+    width: 100%; /* Makes the image take full width of its container */
+    height: auto; /* Maintains aspect ratio */
+    /* Slightly rounded corners for the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.jazz-artist p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+
