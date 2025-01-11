@@ -157,44 +157,7 @@
     #hamburger-nav{
         display: flex;
     }
-    .contact-container {
-        display: flex;
-        justify-content: space-between;
-        gap: 65px;
-        flex-wrap: nowrap;
-        
-        max-width: 60%;
-        align-items: center;
-        border: 3px solid #226b22;
-        background-color: white;
-        border-radius: 15px;
-        
-        padding: 10px 5px;
-        
-        
-    }
-    
-    .contact-item {
-        display: flex;
-        align-items: center;
-        gap: 0;
-        width: 15%;
-        font-size: 10px;
-        padding: 10px;
-        border-radius: 15px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    
-    .email, .linkedin{
-        flex: 1;
-    }    
-    .contact-container img{
-        width: 45%;
-        height: auto;
-    }
-    .linkedin p{
-        margin-right: 5px;
-    }
+  
   
  
 }
